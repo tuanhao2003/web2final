@@ -4,8 +4,7 @@
 ?>
 
 <div style="max-width: 25%;" class="border-end border-1 border-light border-dash bg-dark text-main">
-    <div class="collapse collapse-horizontal show vh-100 p-0 px-3 overflow-scroll"
-        style="overflow-x: hidden !important;" id="adminSideBar">
+    <div class="collapse collapse-horizontal show vh-100 p-0 px-3 overflow-scroll" style="overflow-x: hidden !important;" id="adminSideBar">
 
         <div class="container position-sticky top-0 bg-dark" style="z-index:100;">
             <div class="row">
@@ -24,8 +23,7 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <a data-bs-toggle="collapse" data-bs-target="#accountSetting" aria-controls="accountSetting"
-                        aria-label="Toggle navigation" aria-expanded="false" class="btn text-main border-main text-lg">
+                    <a data-bs-toggle="collapse" data-bs-target="#accountSetting" aria-controls="accountSetting" aria-label="Toggle navigation" aria-expanded="false" class="btn text-main border-main text-lg">
                         <i class="bi bi-list"></i>
                     </a>
                 </div>
@@ -116,6 +114,20 @@
                                 <i class="bi bi-trash3"></i> Delete
                             </a>
                         </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-12">
+                    <div class="text-second">Statistic</div>
+                    <ul class="list-style-none list-group p-0 rounded-3">
+                        <li class="d-flex list-group-item">
+                            <a class="flex-fill" href="/web2/admin/statistic">
+                                <i class="bi bi-tools"></i> Statistic
+
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,53 @@
+body{
+    background-color: white;
+}
+
+label{
+    
+}
+
+.title_form{
+    color: rgb(218, 165, 32);
+}
+
+.information_customer{
+    /* background-color: red; */
+    width: 500px;
+}
+
+
+.information_customer table{
+    border-spacing: 10px;
+}
+
+.information_customer .td_name{
+    text-align: right;
+ }
+
+.information_customer label{
+   font-size: 16px;
+}
+
+.information_customer .inp_text{
+    font-size: 16px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+ }
+
+.information_customer select{
+font-size: 16px;
+}
+.information_customer .save_btn{
+    font-size: 15px;
+    color:rgb(255, 255, 255) ;
+    background-color: rgb(218, 165, 32);
+    border-radius: 1rem;
+    padding: 13px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 130px;
+}
+
+

@@ -1,0 +1,53 @@
+-- Dữ liệu cho bảng TaiKhoan
+INSERT INTO TaiKhoan (MaTK, TenDangNhap, MatKhau, TrangThai, URLHinh) VALUES
+('TK001', 'user1', 'password1', 1, 'url_hinh_1.jpg'),
+('TK002', 'user2', 'password2', 1, 'url_hinh_2.jpg'),
+('TK003', 'user3', 'password3', 1, 'url_hinh_3.jpg');
+
+-- Dữ liệu cho bảng Quyen
+INSERT INTO Quyen (MaTK, PhanQuyen) VALUES
+('TK001', 'Admin'),
+('TK002', 'Moderator'),
+('TK003', 'User');
+
+-- Dữ liệu cho bảng Hang
+INSERT INTO Hang (MaHang, TenHang) VALUES
+('H001', 'Điện thoại di động'),
+('H002', 'Máy tính xách tay'),
+('H003', 'Đồng hồ thông minh');
+
+-- Dữ liệu cho bảng SanPham
+INSERT INTO SanPham (MaSP, TenSP, DonGia, HinhAnh, MoTa, TrangThaiTonTai, MaHang) VALUES
+('SP001', 'iPhone 13', 25000000, 'iphone13.jpg', 'Điện thoại iPhone mới nhất', 1, 'H001'),
+('SP002', 'MacBook Pro', 50000000, 'macbookpro.jpg', 'Laptop MacBook Pro cao cấp', 1, 'H002'),
+('SP003', 'Samsung Galaxy Watch 4', 8000000, 'galaxywatch4.jpg', 'Đồng hồ thông minh Samsung', 1, 'H003');
+
+-- Dữ liệu cho bảng KhachHang
+INSERT INTO KhachHang (MaKH, TenKH, DiaChi, NgaySinh, Email, SDT, MaTK) VALUES
+('KH001', 'Nguyễn Văn A', '123 Đường ABC, Quận XYZ, Thành phố HCM', '1990-01-15', 'nguyenvana@gmail.com', '0123456789', 'TK001'),
+('KH002', 'Trần Thị B', '456 Đường XYZ, Quận ABC, Thành phố Hanoi', '1985-05-20', 'tranthib@gmail.com', '0987654321', 'TK002'),
+('KH003', 'Lê Văn C', '789 Đường XYZ, Quận DEF, Thành phố Đà Nẵng', '1995-10-10', 'levanc@gmail.com', '0369852147', 'TK003');
+
+-- Dữ liệu cho bảng GioHang
+INSERT INTO GioHang (MaKH, MaSP) VALUES
+('KH001', 'SP001'),
+('KH002', 'SP002'),
+('KH003', 'SP003');
+
+-- Dữ liệu cho bảng HoaDon
+INSERT INTO HoaDon (MaHD, MaKH, HinhThucTra, NgayLap, TongGiaGoc) VALUES
+('HD001', 'KH001', N'Thanh toán khi nhận hàng', '2024-05-01 08:30:00', 25000000),
+('HD002', 'KH002', N'Thanh toán trực tuyến', '2024-05-02 14:45:00', 50000000),
+('HD003', 'KH003', N'Thanh toán qua chuyển khoản', '2024-05-03 10:20:00', 8000000);
+
+-- Dữ liệu cho bảng CTHoaDon
+INSERT INTO CTHoaDon (MaHD, MaSP, SoLuong, GiaTien) VALUES
+('HD001', 'SP001', 1, 25000000),
+('HD002', 'SP002', 1, 50000000),
+('HD003', 'SP003', 1, 8000000);
+
+-- Dữ liệu cho bảng GiaoHang
+INSERT INTO GiaoHang (MaVanDon, NgayGiao, NgayNhán, TinhTrang, DiaDiem, MaHD) VALUES
+('VD001', '2024-05-02 10:00:00', '2024-05-02 11:00:00', 'Đã giao', '123 Đường ABC, Quận XYZ, Thành phố HCM', 'HD001'),
+('VD002', '2024-05-03 12:00:00', '2024-05-03 13:00:00', 'Đã giao', '456 Đường XYZ, Quận ABC, Thành phố Hanoi', 'HD002'),
+('VD003', '2024-05-04 14:00:00', '2024-05-04 15:00:00', 'Đã giao', '789 Đường XYZ, Quận DEF, Thành phố Đà Nẵng', 'HD003');

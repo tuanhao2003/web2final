@@ -1,0 +1,179 @@
+:root {
+    --dark-bg: #333;
+    --dark-text-primary: white;
+    --dark-text-secondary: goldenrod;
+
+    --light-bg: white;
+    --light-text-primary: black;
+    --light-text-secondary: goldenrod;
+}
+
+::-webkit-scrollbar {
+    width: 1px !important;
+    background: var(--dark-bg) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff !important;
+    border-radius: 50px !important;
+}
+
+::-webkit-scrollbar:has(:-webkit-scrollbar-thumb:hover) {
+    width: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-text-secondary) !important;
+}
+
+::-webkit-scrollbar:hover {
+    width: 10px !important;
+}
+
+.bg-golden-jelly {
+    background: rgba(218, 165, 32, 20%);
+    border: 1px solid goldenrod;
+}
+
+.img-flu img {
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.sideBarControl.collapsed i::before{
+    rotate: -180deg !important;
+    transition: 1s !important;
+}
+
+.sideBarControl i::before{
+    rotate: none !important;
+    transition: 1s !important;
+}
+
+.row {
+    margin: 0 auto !important;
+}
+
+.img-flu-vertical img {
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.text-main {
+    color: var(--dark-text-primary) !important;
+}
+
+.text-main a {
+    color: var(--dark-text-primary) !important;
+}
+
+.border-main {
+    border: 1px solid var(--dark-text-primary) !important;
+}
+
+.text-second {
+    color: var(--dark-text-secondary) !important;
+}
+
+.text-second a {
+    color: var(--dark-text-secondary) !important;
+}
+
+.border-second {
+    border: 1px solid var(--dark-text-secondary) !important;
+}
+
+.bg-main {
+    background-color: var(--dark-bg) !important;
+}
+
+.list-style-none {
+    list-style-type: none;
+}
+
+.list-group li.list-group-item {
+    background: transparent;
+    border: none;
+    border-radius: .5rem;
+}
+
+.list-group li.list-group-item a {
+    text-decoration: none;
+}
+
+li.list-group-item.active {
+    background: white;
+    /* background: rgba(218, 165, 32, 20%); */
+    border: 1px solid goldenrod;
+    border: 1px solid var(--dark-text-secondary);
+    color: var(--light-text-primary) !important;
+    position: relative;
+}
+
+li.list-group-item.active::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    rotate: 45deg;
+    position: absolute;
+    left: 100%;
+    background: white;
+    /* background: rgba(218, 165, 32, 20%); */
+    border-right: 1px solid goldenrod;
+    border-top: 1px solid goldenrod;
+    border-radius: 3px;
+    top: 50%;
+    transform: translateX(-60%);
+}
+
+li.list-group-item.active a {
+    color: var(--light-text-primary) !important;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 26px;
+    border: 1px solid black;
+    border-radius: 26px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggleCircle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transition: .5s;
+    border-radius: 26px;
+}
+
+.toggleCircle:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 2px;
+    background-color: black;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.toggle input:checked+.toggleCircle {
+    background-color: goldenrod;
+}
+
+.toggle input:checked+.toggleCircle:before {
+    transform: translateX(18px);
+    background-color: white;
+}

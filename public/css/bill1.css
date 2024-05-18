@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+
+:root {
+    --main-color: goldenrod;
+    --text-color: #020102;
+    --bg-color: #fff;
+}
+
+section{
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+
+}
+
+.infor_column {
+    align-items: center;
+    margin-right: 50px;
+    background-color: white;
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 260px;
+}
+
+.infor_column .img_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.infor_column .img_text p{
+    font-size: 20px;
+    
+}
+
+.infor_column .infor_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.infor_column .infor_text{
+    margin: 10px;
+}
+
+.infor_personal{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.infor_column .infor_personal img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.infor_personal a{
+    font-size: 20px;
+}
+
+
+.infor_bill{
+   margin-top: 17px;
+}
+
+.infor_bill h2{
+   color: goldenrod;
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+
+.bill_items2{
+    width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.bill_items2 .bill_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid hsl(0, 0%, 73%);
+}
+
+.bill_items2 .bill_details a{
+    color: white;
+}
+
+.bill_items2 .bill_details .id_bill{
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.bill_details button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: goldenrod;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.bill_details button:hover{
+    background-color: hwb(43 0% 24%);}
+
+.bill_details button:active{
+
+    background-color: hwb(43 2% 38%)
+    
+}
+
+.bill_items2 .bill_product{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-bottom: 2px solid hsl(0, 0%, 73%);
+
+}
+
+.bill_items2 .bill_product .img_product{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.bill_items2 .product_infor p{
+    margin-left: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
+.bill_items2 .bill_total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bill_items2 .bill_total p{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+/* Chi tiết hóa đơn ở đây */
+
+.infor_bill_detail{
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.infor_bill_detail2{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.infor_bill_detail h2{
+    color: goldenrod;
+    font-size: 30px;
+    padding-bottom: 10px;
+ }
+
+ .infor_bill_detail .title_detail{
+    text-align: center;
+ }
+
+
+ .infor_bill_detail .bill_time_infor{
+    width: 800px;
+    height: 100px;
+    border-bottom: 2px solid hsl(0, 0%, 73%);
+    border-top: 2px solid hsl(0, 0%, 73%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.infor_bill_detail .bill_time_infor p{
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.infor_bill_detail .img_product{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.infor_bill_detail .product{
+    display: flex;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    
+}
+
+.infor_bill_detail .product .infor_product p{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: large;
+}
+
+.infor_bill_detail .product .price {
+    margin-left: auto; /* Đẩy phần tử price sang phải cùng */
+    padding-top: 50px;
+    font-size: larger;
+}
+
+.infor_bill_detail .total_price{
+    font-size: 25px;
+    padding-top: 10px;
+    border-top: 2px solid hsl(0, 0%, 73%);
+    text-align: right;
+}

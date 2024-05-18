@@ -33,7 +33,7 @@ class c_admin
     }
     public function statistic()
     {
-        require_once "mvc/controller/c_productsManage.php";
-        require_once "mvc/view/admin/v_products.php";
+        require_once "mvc/controller/c_statistic.php";
+        require_once "mvc/view/admin/v_statistic.php";
     }
 }

@@ -1,3 +1,8 @@
+<?php 
+    require_once "mvc/controller/c_admin.php";
+    
+?>
+
 <div style="max-width: 25%;" class="border-end border-1 border-light border-dash bg-dark text-main">
     <div class="collapse collapse-horizontal show vh-100 p-0 px-3 overflow-scroll"
         style="overflow-x: hidden !important;" id="adminSideBar">
